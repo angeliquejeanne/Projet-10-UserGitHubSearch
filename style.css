@@ -1,0 +1,81 @@
+*, ::before, ::after  {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    top: 0;
+    left: 0;
+}
+
+body {
+    background: black;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    font-size: 4.5rem;
+    color: snow;
+    text-align: center;
+    margin: 40px 0 50px 0;
+}
+@media screen and (max-width:600px) {
+    h1 {
+        font-size: 3rem;
+    }
+}
+form, .display {
+    margin: 0 auto;
+    width: 50%;
+    max-width: 800px;
+    min-width: 310px;
+}
+input {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: 15px;
+    font-size: 20px;
+    border: 3px solid red;
+}
+.display {
+    display: flex;
+    justify-content: center;
+}
+.card {
+    width: 500px;
+    height: auto;
+    position: relative;
+    margin-top: 100px;
+    padding-bottom: 20px;
+    border-radius: 5px;
+    background: snow;
+}
+.avatar {
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: black;
+    border: 3px solid red;
+}
+h2 {
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+}
+.contenaireInfo {
+    border-top: 3px dashed red;
+    margin-top: 20px;
+    list-style-type: none;
+}
+li {
+    padding: 10px 20px;
+    text-align: justify;
+    font-size: 22px;
+}
+li:nth-child(1){
+    margin-top: 15px;
+}
